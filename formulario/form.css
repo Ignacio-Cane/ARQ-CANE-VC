@@ -1,0 +1,85 @@
+*{
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+:root{
+    --colorGris: rgb(172, 172, 172);
+}
+h1{
+    color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+h1:hover{
+    box-shadow:;
+}
+body{
+    background-image: url(./formulario/10.jpg);
+    opacity: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+
+input{
+    background-color: var(--colorGris);
+    opacity: 70%;
+    border-radius: 10px;
+    padding: 5px;
+}
+input:invalid{
+    text-decoration:underline red;
+    opacity: 60%;
+}
+.padre{
+    margin: auto;
+    max-width: 400px;
+    background-color: rgb(228, 161, 161);
+    border-radius: 10px;
+    border: 2px solid var(--colorGris);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 800px;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px; 
+}
+
+.titulo:invalid::after{
+    content: "Introduzca un email correcto";
+    color: black;
+}
+
+input:focus{
+    border: 20px  rgb(172, 172, 172);
+    background-color: rgb(255, 255, 255);
+}
+#paisOrigen{
+    width: 400px;
+    height: 30px;
+    background-color:var(--colorGris);
+    border-radius: 10px;
+    
+}
+#coment{
+    background-color: var(--colorGris);
+    border-radius: 10px;
+}
+#correo{
+    font-weight: 400;
+}
+.titulo{
+    font-family:'Fuzzy Bubbles';
+    font-weight: 700;
+}
+.boton{
+    background-color: rgb(87, 87, 87);
+}
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+
+}
