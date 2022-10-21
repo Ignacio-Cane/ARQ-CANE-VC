@@ -1,0 +1,21 @@
+*{
+
+}
+
+:root{
+    --colorbase: lightblue;
+
+}
+.iconos{
+    gap: 20px;
+    
+}
+.miniIconos{
+    font-size: 30px;
+    color: var(--colorbase);
+    
+}
+.fotoPerfil{
+    background-size: contain ;
+    height: 50x;
+}
