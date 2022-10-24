@@ -12,27 +12,38 @@
     <script src="https://kit.fontawesome.com/8d9f2356f3.js" crossorigin="anonymous"></script>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <title>PORTFOLIO</title>
 </head>
-
 <body>
     <nav class="container-fluid navbar navbar-expand-lg bg-light">
         <div class="row container-fluid ">
-            <a class="col-4 navbar-brand" href="#"><h1> IGNACIO CANE</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="col-4 navbar-brand " href="#"><h1 class="fw-bold">IGNACIO CANE</h1></a>
+            <button class="col navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="col-6 collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <a class="nav-link" href="#">INICIO</a>
-                    <a class="nav-link" href="#">PERFIL</a>
-                    <a class="nav-link" href="#">HABILIDADES</a>
-                    <a class="nav-link">PROYECTOS</a>
+                    <li>
+                        <a class="nav-link" href="#inicio">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#perfil">PERFIL</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#habilidad">HABILIDADES</a>
+                    </li>    
+                    <li>
+                        <a class="nav-link" href="#proyecto">PROYECTOS</a>
+                    </li>    
+                    <li>
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
                 </ul>  
             </div>
-
-            <div class="col-2 iconos d-flex ">
+            <div class="col-2 iconos d-flex">
                 <a  href="https://www.instagram.com/estudio.cane/?hl=es-la"target="_blank" alt="estudio"><i class="miniIconos fa-brands fa-instagram"></i>
                 </a>
                 <a  href=""target="_blank" alt="estudio"><i class="miniIconos fa-brands fa-facebook"></i>
@@ -44,35 +55,135 @@
             </div>
         </div>
     </nav>
-    <header class="container-fluid">
-        <div class="row d-flex justify-content-center align-items-center p-5 h-100">
+    <header class="cabecera container-fluid">
+        <div class="row d-flex justify-content-center align-items-center p-5 h-100" id="inicio">
             <div class="texto col-5 px-5">
                 <p>Yo soy</p>
-                <h2>FULL STACK DEVELOPER</h2>
+                <h2 class="mb-3 fw-bold">FULL STACK DEVELOPER</h2>
                 <p>Cordoba, Argentina.</p>
                 <div class="botones mt-5">
-                    <a href="">Ver mis trabajos</a>
-                    <a href="">Contactarme</a>
+                    <a class="miniBotones text-decoration-none me-4 p-3" href="#habilidad">Ver mis trabajos</a>
+                    <a class="fontBlack" href="#contacto">Contactarme<i class="fa-solid fa-arrow-down-long"></i></a>
                 </div>
             </div>
-            <a class="col-2" href=""><i class="fa-solid fa-arrow-down"></i></a>
-            <img class="fotoPerfil col-5 w-25 border border-5 rounded-circle p-0 img-fluid " src="/PORTFOLIO/imagenes/WhatsApp Image 2022-06-14 at 6.29.49 PM.jpeg" alt="perfil">
+            <a class="fontBlack col-2 align-self-end" href=""><i class="fa-solid fa-arrow-down"></i></a>
+            <img class="col-5 w-25 p-0 fotoPerfil" src="/PORTFOLIO/imagenes/WhatsApp Image 2022-06-14 at 6.29.49 PM.jpeg" alt="perfil">
         </div>
     </header>
-    
-
-
-
-
-
-    <!--col-5 w-25 border border-5 rounded-circle p-0
-
-
-
-
-
-
-
+    <main class="container-fluid">
+        <section class="row flex-column align-items-center pb-0" id="perfil">
+            <p class="text-center textoUno fw-bold">Perfil</p>
+            <h2 class="text-center">SOBRE MI..</h2>
+            <p class="p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint consequuntur dolorum id cumque fugiat voluptas tempore porro ab! Odit, adipisci. Accusamus eveniet at ipsa, repellat molestias unde nisi illum.</p>
+            <table class="mt-5 datosPersonales">
+                <tr>
+                    <th>Nombre:</th>
+                    <th>Email:</th>
+                    <th>Fecha de Nacimiento:</th>
+                    <th>Origen:</th>
+                </tr>
+                <tr>
+                    <th>Ignacio Cane</th>
+                    <th>nachicane7@gmail.com</th>
+                    <th>28 de Julio</th>
+                    <th>Rosario,Argentina</th>  
+                </tr>
+            </table>  
+        </section>
+        <section class="row flex-column align-items-center pb-0" id="habilidad">
+            <p class="text-center textoUno fw-bold">Habilidades</p>
+            <h2 class="text-center">MIS CONOCIMIENTOS..</h2>
+            <div class="gridTemplate">
+                <div class="d-flex flex-column align-items-center">
+                    <p>HTML</p>
+                    <i class="iconosSkills fa-brands fa-html5"></i>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>CSS</p>
+                    <i class="iconosSkills fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>Bootstrap</p>
+                    <i class="iconosSkills fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>Java</p>
+                    <i class="iconosSkills fa-brands fa-js"></i>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>Figma</p>
+                    <i class="iconosSkills fa-brands fa-figma"></i>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>React</p>
+                    <i class="iconosSkills fa-brands fa-react"></i>
+                </div>
+            </div>
+        </section>
+        <section class="row flex-column align-items-center" id="proyecto">
+            <p class="text-center textoUno fw-bold">Proyectos</p>
+            <h2 class="text-center">MIS EXPERIENCIAS..</h2>
+            <div class="gridTemplate">
+                <div class="d-flex flex-column align-items-center">
+                    <p>ARQ</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/a2.jpg" alt="arq"></a>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p>ARQ</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/a1.jpg" alt="arq"></a>
+                </div> 
+                <div class="d-flex flex-column align-items-center">
+                    <p>ARQ</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/a3.jpg" alt="arq"></a>
+                </div>  
+                <div class="d-flex flex-column align-items-center">
+                    <p>Programacion</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/b2.jpg" alt="prog"></a>
+                </div>  
+                <div class="d-flex flex-column align-items-center">
+                    <p>Programacion</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/b1.jpg" alt="prog"></a>
+                </div>  
+                <div class="d-flex flex-column align-items-center ">
+                    <p>Programacion</p>
+                    <a href=""><img class="fotoProyect" src="./imagenes/b3.jpg" alt="prog"></a>
+                </div>    
+            </div>
+        </section>
+        <section class="row align-items-center cabecera" id="contacto">
+            <div class="col-5">
+                <h2 class="fuenteHdos fw-bold">CONTACTATE CONMIGO PARA DISEÑAR TU PROXIMO PROYECTO</h2>
+                <P>Te voy a garantizar un muy buen proyecto, donde lo vamos a diseñar juntos y te garantizo una muy buena calidad.</P>
+            </div>
+            <div class="col-5">
+                <h2 class="fuenteHdos fw-bold">COMPLETE EL FORMULARIO A CONTINUACION</h2>
+                <form action="" method="POST">
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="nombreCompleto">Ingrese su Nombre completo</label>
+                        <input class="respuestaUsuario" type="text" name="Nombre y Apellido:" id="nombreCompleto">
+                    </div>
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="emailUsuario">Ingrese su email</label>
+                        <input class="respuestaUsuario" type="email" name="Email:" id="emailUsuario" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="temaProyecto">Tema de proyecto</label>
+                        <textarea class="respuestaUsuario" type="text" name="Tema de Proyecto:" id="temaProyecto"></textarea>
+                    </div>
+                    <div class="miniFormulario">
+                        <button type="submit" class="btn miniBotones rounded-0">ENVIAR<i class="fa-sharp fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section> 
+    </main>
+    <footer class="container-fluid p-4 miniBotones">
+        <div class="row px-2">
+            <p class="col-6 text-center">Copyright &copy; 2021 <span class="fontBLue">Julia.</span>All Rights Reserved</p>
+            <p class="col-6  text-center">Designed by <span class="fontBLue">IGNACIO CANE</span></p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
