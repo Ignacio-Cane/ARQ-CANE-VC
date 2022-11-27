@@ -20,7 +20,7 @@
 
 <body>
     <nav class="container-fluid navbar navbar-expand-lg bg-light">
-        <div class="row container-fluid">
+        <div class=" icon container-fluid">
             <div class="col-6 collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
@@ -50,10 +50,10 @@
       </nav>
     <header>
             <h1 class="titulo" id="inicio"> ESTUDIO JUAN CANE</h1>
-            <P>Estudio de Arquitectura creado por<span> Juan Carlos CANE</span>, y seguido por su hijo <span> Juan CANE</span>. Con una historia de mas de 50 años de historia y mas de 1000 obras hechas.</P>   
+            <P class="textoBreve">Estudio de Arquitectura creado por<span> Juan Carlos CANE</span>, y seguido por su hijo <span> Juan CANE</span>. Con una historia de mas de 50 años de historia y mas de 1000 obras hechas.</P>   
     </header>   
     <main class="container-fluid"> 
-        <section class="row">
+        <section class="achicar row">
             <h2 class="text-center titulos" id="proyectos">PROYECTOS</h2>
             <div class="enlacesPadre p-0">
                 <div class="enlaces hijos1">
@@ -78,8 +78,8 @@
                 </div> 
             </div>
         </section>  
-        <section class="row">
-            <h2 class="text-center titulos" id="galeria">GALERIA</h2>
+           <section class="row">
+            <h2 class="text-center titulos" id="galeria">POLIDEPORTIVO</h2>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -102,12 +102,61 @@
                 </button>
               </div>
         </section> 
+
         <section class="row">
-            <div class="formulario">
-            <h2 class="text-center titulos" id="contacto">CONTACTO</h2>
+            <h2 class="text-center titulos" id="galeria">MUTUAL</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/CLASE 1/DSC07574.JPG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/CLASE 1/DSC07578.JPG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/CLASE 1/DSC07581.JPG" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section> 
+
+        <section class="row  cabecera" id="contacto">
+            <div class="col-5">
+                <h2 class="fuenteHdos fw-bold">CONTACTATE CONMIGO PARA DISEÑAR TU PROXIMO PROYECTO</h2>
+                <P class="fuenteHdos fw-bold">Te voy a garantizar un muy buen proyecto, donde lo vamos a diseñar juntos y te garantizo una muy buena calidad.</P>
+            </div>
+            <div class="col-5">
+                <h2 class="fuenteHdos fw-bold">COMPLETE EL FORMULARIO A CONTINUACION</h2>
+                <form action="" method="POST">
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="nombreCompleto">Ingrese su Nombre completo</label>
+                        <input class="respuestaUsuario" type="text" name="Nombre y Apellido:" id="nombreCompleto">
+                    </div>
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="emailUsuario">Ingrese su email</label>
+                        <input class="respuestaUsuario" type="email" name="Email:" id="emailUsuario" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <div class="miniFormulario">
+                        <label class="fw-bold" for="temaProyecto">Tema de proyecto</label>
+                        <textarea class="respuestaUsuario" type="text" name="Tema de Proyecto:" id="temaProyecto"></textarea>
+                    </div>
+                    <div class="miniFormulario miniBotones">
+                        <button type="submit" class="btn miniBotones rounded-0">ENVIAR<i class="fa-sharp fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section> 
     </main>
+
     <footer class="pieDePagina">
         <div >
             <a href="https://www.youtube.com/channel/UCTYMfAHdOzp8p0_v6SyhT6A">

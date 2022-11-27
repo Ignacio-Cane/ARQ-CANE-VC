@@ -19,7 +19,7 @@ h1{
     margin-left: 50px;
 }
 
-.iconos{
+div .iconos{
     gap: 30px;   
 }
 .miniIconos{
@@ -60,7 +60,7 @@ a {
     background-color: var(--colorborde);
     padding: 10px;
 }
-.textoUno{
+.row .textoUno{
     background-color: var(--colorbase);
     width: fit-content;  
 }

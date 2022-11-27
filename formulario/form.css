@@ -6,17 +6,15 @@
     --colorGris: rgb(172, 172, 172);
 }
 h1{
-    color: lightcoral;
+    color: rgb(221, 71, 71);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
 }
-h1:hover{
-    box-shadow:;
-}
+
 body{
-    background-image: url(./formulario/10.jpg);
+    background-image: url(./10.jpg);
     opacity: 90%;
     background-size: cover;
     background-attachment: fixed;
@@ -37,7 +35,7 @@ input:invalid{
 .padre{
     margin: auto;
     max-width: 400px;
-    background-color: rgb(228, 161, 161);
+    background-color: rgb(221, 71, 71);
     border-radius: 10px;
     border: 2px solid var(--colorGris);
     display: flex;

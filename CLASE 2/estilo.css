@@ -13,6 +13,7 @@ nav{
     position: sticky!important;
     top: 0;
     margin-bottom: 100px;
+    z-index: 1;
 }
 .redes{
     display: flex;
@@ -45,7 +46,7 @@ span{
     font-weight: 400;
     text-decoration:underline;
 }
-p {
+.textoBreve{
     margin: 0px;
     padding: 0px 100px 30px 20px;
     font-size: 20px;
@@ -54,6 +55,7 @@ p {
 /* MAIN*/
 .titulos{
     margin: 30px 0px;
+    color: white;
 
 }
 .enlacesPadre{
@@ -99,8 +101,10 @@ p {
     padding: 10px 10px;  
 }
 .formulario{
-    background-color: black;
+    background-color: rgb(173, 173, 173);
     padding: 100px 0px;
+    margin-top: 50px !important;
+    
 }
 /* MAIN*/
 .pieDePagina{
@@ -115,11 +119,56 @@ p {
 } 
 .tarjeta{
     height: 30px;
+    width: 70%;
 }
+.cabecera{
+    background-color: rgb(172, 172, 172);
+    margin-top: 30px !important;
+    padding: 100px 80px;
+    gap: 10px;
 
-@media(max-width:400px){
+}
+.form{
+    display: block;
+    gap:20px;
+}
+.miniFormulario{
+    padding: 10px 0px;
+ }
+ .fuenteHdos{
+    color: black;
+ }
+ .respuestaUsuario{
+    border: none;
+    border-radius: 0px;
+    border-bottom:1px solid black;
+    height: 20px;
+    width: 90%;
+    margin-bottom: 1rem;
+    background-color: rgb(172, 172, 172)
+ }
+ 
+ 
+
+@media(max-width:800px){
     .enlacesPadre{
         display: block; 
+    }
+    .achicar{
+        padding: 50px 100px;
+        gap: 10px;
+    }
+    .enlacesPadre{
+        display: inline;
+        padding: 10px 10px;
+    }
+    .enlaces{
+        width: auto;
+        padding: 10px 10px;
+    }
+    .icon{
+        display: flex ;
+        justify-content: center !important;
     }
     }
     

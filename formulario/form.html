@@ -30,19 +30,21 @@
                 Contraseña
                 <input type="password" name="contraseña" id="contra"required/>
             </label>
-            <label class="titulo" for="turno">Indique el Tipo de Arquitectura:</label>
+            
+            <label class="titulo" for="">Indique el Tipo de Arquitectura:</label>
             <label for="TArqV">
                 Vivienda
-                <input type="radio" name="" value="Vivienda" id="TArqV ">
+                <input type="radio" name="Turno" value="Vivienda" id="TArqV ">
             </label>
             <label for="TArqE">
                 Edificio
                 <input type="radio" name="Turno" value="Edificio" id="TArqE">
             </label>
-            <label for="TArqV">
+            <label for="TArqL">
                 Local
-                <input type="radio" name="ARQ" value="Vivienda" id="TArqV ">
+                <input type="radio" name="Turno" value="Vivienda" id="TArqL">
             </label>
+
             <label class="titulo" for="material">
                 Seleccione tipo de Material:</label>
             <label for="ladrillo">
@@ -57,9 +59,9 @@
                 Metal
                 <input type="checkbox" name="Tipo de Arquitectura" value="Metal" id="metal">
             </label>
+
             <label class="titulo" for="paisOrigen">
                 Seleccione el Pais de Origen:
-
             </label>
             <select name="paisOrigen" id="paisOrigen">
                 <option value="Seleccionar Pais" selected disabled>Seleccione..</option>
@@ -70,14 +72,17 @@
                 <option value="Alemania">Alemania</option>
                 <option value="Uruguay">Uruguay</option>
             </select>
+
             <label class="titulo" for="fecha">
                 Ingrese Fecha de Nacimiento
                 <input type="date" name="Fecha de Nacimiento" id="fecha">
             </label>
+
             <label class="titulo" for="coment">
                 Comentarios
             </label>
             <textarea name="Comentarios" id="coment"  placeholder="Comente..." ></textarea>
+
             <input class="boton" type="submit" value="Enviar">
         </div>
     </form>    
